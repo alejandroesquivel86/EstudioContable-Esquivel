@@ -1,0 +1,747 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+/*Paleta de Colores*/
+
+/*Azul Oscuro
+#104471;rgba(16,68,113,255)
+#114470;rgba(17,68,112,255)
+
+Celeste
+#77c9ed;rgb(119,201,237)
+#74c9ee;rgba(116,201,238,255)
+
+Turquesa
+#3391c1;rgb(51,145,193)
+#289cd8;rgb(40,156,216)
+
+Grises (Fuente)
+#949494;rgb(148,148,148)
+#707070;rgba(112,112,112,255)
+
+Pastel
+#e7eaec;rgb(231,234,236)
+
+*/
+
+/*MENU*/
+
+#logo{
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    /*width: 100%;*/
+}
+
+.menu{    
+    font-size: 16px;    
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    top: 0;
+    right: 0;    
+}
+.menu a:hover{
+    background-color:blue; 
+    color: white;
+    padding: 10px;    
+}
+
+.menu div ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+/*MENU - Estilo Lista sin Bullet*/
+
+.menuLista{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: square;
+} 
+
+nav ul a{
+    text-decoration: none;   
+    color: black;
+    padding: 5px;
+}
+
+
+/*BODY*/
+
+.nombreEstudio{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+.nombreEstudioServicio{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+.equipoPresentacion{
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    display: grid;  
+    align-content: stretch;
+    justify-items: stretch;   
+    grid-template-columns: 1fr 1fr ;    
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+    "andrea alejandro";
+    }
+
+.andrea {
+    grid-area: andrea;        
+    }
+
+.alejandro{
+        grid-area: alejandro;        
+    }
+
+.andrea{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.alejandro{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.quienesSomos{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-block-start: 1.00em;
+    margin-block-end: 1.00em;
+}
+
+.fotoAndrea{
+    left: 25%;
+    width: 38%;
+    border-style: solid;    
+}
+
+.fotoAle{
+    left: 25%;
+    width: 50%;
+    border-style: solid;    
+}
+
+.fotoAndreaBorde{
+    position: relative;
+    left: 25%;
+    border-style: solid;
+}
+
+.fotoAleBorde{
+    position: relative;
+    left: 25%;
+    border-style: solid;
+}
+
+.hola{  
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+
+section article p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*FOOTER*/
+#footer{
+    background-color:black;
+    font-size: 12px;
+    color: white;    
+    height: inherit;
+    margin-block-start: 0.67em;
+
+}
+
+#footer h4{
+font-family: 'Poppins', sans-serif;
+font-size: 16px;
+}
+
+#footer p{
+    font-family: 'Robot', sans-serif;
+    font-size: 12px;
+}
+
+.footerColumnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+.redesSociales a{
+display: block;
+}
+
+.masDelEstudio{
+    text-align: justify;
+    width: 33%;    
+}
+
+.redesSociales{
+    text-align: justify;
+    width: 33%;
+}
+
+.contacto{
+    text-align: justify;
+    width: 33%;
+}
+
+.copyright{
+    text-align: center;
+    width: 4fr;
+}
+
+
+/*GRIDS INDEX*/
+
+.contenedorIndex {
+    display: grid;  
+    align-content: stretch;
+    justify-items: stretch;   
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    grid-template-rows: 0.10fr 0.10fr 0.10fr repeat(3, 1fr) 0.50fr; 
+    grid-template-areas: 
+    "nav nav nav nav "
+    "nosotros nosotros nosotros nosotros"
+    "servicio servicio servicio servicio"
+    "somos somos somos somos"
+    "presentacion presentacion presentacion presentacion"
+    "presentacion presentacion presentacion presentacion"
+    "footer footer footer footer"
+    ;}
+
+    .headerIndex {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 10px;
+    }
+
+    .nombreEstudio{
+        grid-area: nosotros;
+        margin: 10px 10px;
+    }
+
+    .nombreEstudioServicio{
+        grid-area: servicio;
+        margin: 10px 10px;
+    }
+
+    .quienesSomos{
+        grid-area: somos;
+        margin: 10px 10px;
+    }
+
+    .equipoPresentacion {
+        grid-area: presentacion;
+        margin: 10px 10px;
+    }
+
+    #footer {
+        grid-area: footer;        
+    }
+
+/*SERVICIOS*/
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.servicios{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.serviciosLista{
+    margin: 15px;
+}
+
+.serviciosTitulo{
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.serviciosEstudio li{
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+/*GRID SERVICIO*/
+        .contenedorServicios {
+        display: grid;  
+        align-content: stretch;
+        justify-items: stretch;   
+        grid-template-columns: 1fr 1fr 1fr 1fr;    
+        grid-template-rows: 0.10fr 0.10fr repeat(2, 1fr) 0.50fr; 
+        grid-template-areas: 
+        "nav nav nav nav"        
+        "tituloserv tituloserv tituloserv tituloserv"
+        "servicios servicios servicios servicios"
+        "servicios servicios servicios servicios"        
+        "footer footer footer footer"
+        ;}
+
+        .headerServicio {
+            grid-area: nav;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 10px 10px;
+        }
+
+        .tituloServ{
+            grid-area: tituloserv;
+        }
+
+        .servicios{
+            grid-area: servicios;
+        }
+
+/*PREGUNTAS FRECUENTES*/
+
+.buscador{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.preguntas{
+    margin-bottom: 20px;
+}
+.preguntasLista{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.preguntasListaTitulo{
+    margin-left: 5px;
+    margin-top: 25px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+ol{
+    margin-left: 30px;
+}
+
+.fotoMonotributo{
+    margin: 10px 10px;
+    width: 65%;
+    height: auto;    
+}
+
+.media{
+    margin: 10px 10px;    
+    width: 65%;
+    height: auto;
+}
+/*GRID PREGUNTAS*/
+
+    .contenedorPreguntas {
+    display: grid;  
+    align-content: stretch;
+    justify-items: stretch;   
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    grid-template-rows: 0.10fr 0.10fr 1fr 1fr 1fr 1fr 0.20fr; 
+    grid-template-areas: 
+    "nav nav nav nav"        
+    "titulopreg titulopreg titulopreg titulopreg"
+    "preguntas preguntas preguntas preguntas"
+    "preguntas preguntas preguntas preguntas"
+    "preguntas preguntas preguntas preguntas"
+    "preguntas preguntas preguntas preguntas"        
+    "footer footer footer footer"
+    ;}
+
+    .headerPregunta {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 10px;
+    }
+
+    .tituloPreguntas{
+        grid-area: titulopreg;
+    }
+
+    .preguntas{
+        grid-area: preguntas;
+    }
+
+
+/*PRESUPUESTOS*/
+
+.tituloPresupuesto{   
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formpresupuesto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;    
+    list-style-type: none;    
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presupuestoSubtitulo{    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.presupuestoRadio{
+    display: block;
+}
+
+.mediaPresupuesto{
+        width: 100%;        
+}
+
+/* .contenedorImagenPresup{
+    width: 33%;
+}  */
+
+/*GRID PRESUPUESTO*/
+
+    .contenedorPresupuesto {
+    display: grid;  
+    align-content: stretch;
+    justify-items: stretch;   
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    grid-template-rows: 0.10fr 0.10fr 1fr 0.20fr; 
+    grid-template-areas: 
+    "nav nav nav nav"        
+    "titulopreg titulopreg titulopreg titulopreg"
+    "presupuesto presupuesto presupuesto presupuesto"   
+    "footer footer footer footer"
+    ;}
+
+    .headerPresupuesto {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 10px;
+    }
+
+    .tituloPresupuesto {
+        grid-area: titulopreg;
+    }
+
+    .contenedorPrincipalPresup{
+        grid-area: presupuesto;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 10px;     
+    }
+ 
+
+/*CONTACTO*/
+
+.datosContactoItem{
+    display: block;
+    margin: 5px;
+}
+
+.datosContactoImg{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.datosContactoTexto{
+    display: inline;
+}
+
+.formularioContacto{
+    margin-top: 25px;
+}
+
+.formularioContactoItem{
+    display: block;
+}
+
+.seccionDatosContacto{
+    width: 33%;
+}
+.seccionFormularioContacto{
+    width: 33%;
+}
+.seccionGoogleMaps{
+    width: 33%;
+}
+
+.seccionGoogleMaps iframe{
+    width: 100%;
+}
+
+/*GRID CONTACTO*/
+
+.contenedorContacto {
+    display: grid;  
+    align-content: stretch;
+    justify-items: stretch;   
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    grid-template-rows: 0.10fr 0.10fr 1fr 0.20fr; 
+    grid-template-areas: 
+    "nav nav nav nav"        
+    "titulocontacto titulocontacto titulocontacto titulocontacto"
+    "contacto contacto contacto contacto"   
+    "footer footer footer footer"
+    ;}
+
+    .headerContacto {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 10px;
+    }
+
+    .tituloContacto {
+        grid-area: titulocontacto;
+    }
+
+    .contenedorPrincipalContacto{
+        grid-area: contacto;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 10px;     
+    }
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:500px) {
+    /*HEADER*/
+    .headerIndex {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .headerServicio {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .headerPregunta {
+    flex-direction: column;
+    align-items: center;
+    display: flex;    
+    }
+
+    .headerPresupuesto {
+    flex-direction: column;
+    align-items: center;
+    display: flex;    
+    }    
+
+    .headerContacto {
+    flex-direction: column;
+    align-items: center;
+    display: flex;    
+    }    
+
+    .contenedorMenu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    /*BODY INDEX*/
+    .equipoPresentacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hola{
+        text-align: center;
+    }
+
+    /*CONTACTO*/
+    .contenedorPrincipalContacto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionDatosContacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccionFormularioContacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionGoogleMaps{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /*FOOTER*/
+
+    .footerColumnas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .masDelEstudio{
+        width: 100%;
+        text-align: center;
+    }
+
+    .redesSociales{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacto{
+        width: 100%;
+        text-align: center;
+    }
+    
+
+}
+
+@media screen and (max-width:768px) {
+    .headerIndex {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .headerServicio {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    }
+        
+    .headerPregunta {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .headerPresupuesto {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    }    
+    
+    .headerContacto {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    }    
+           
+    .contenedorMenu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    /*CONTACTO*/
+    .contenedorPrincipalContacto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionDatosContacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccionFormularioContacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionGoogleMaps{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*FOOTER*/
+
+    .footerColumnas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .masDelEstudio{
+        width: 100%;
+        text-align: center;
+    }
+
+    .redesSociales{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacto{
+        width: 100%;
+        text-align: center;
+    }    
+}
+
+    
+
+
