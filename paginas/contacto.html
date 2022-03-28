@@ -11,7 +11,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-        
+        <!-- Animaciones -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
         <!-- css -->
         <link rel="stylesheet" href="../Estilos/estilos.css">
     </head>
@@ -37,18 +41,18 @@
             </nav>        
         </header>
     
-    <h1 class="tituloContacto">
+    <h1 class="tituloContacto animate__animated animate__wobble">
         CONTACTO
     </h1>
     <div class="contenedorPrincipalContacto">
     <section class="seccionDatosContacto" >
         <!-- Datos del Estudio -->
-        <div class="datosContactoItem"><img class="datosContactoImg" src="../Imagenes/outline_home_black_36dp.png" alt=""></div>
-        <p class="datosContactoTexto">Dirección</p>
-        <div class="datosContactoItem"><img class="datosContactoImg" src="../Imagenes/outline_phone_iphone_black_24dp.png" alt=""></div>
-        <p class="datosContactoTexto">Teléfono</p>
-        <div class="datosContactoItem"><img class="datosContactoImg" src="../Imagenes/outline_email_black_24dp.png" alt=""></div>
-        <p class="datosContactoTexto">Mail</p>
+        <div class="datosContactoDir"><img class="datosContactoImg" src="../Imagenes/outline_home_black_36dp.png" alt=""></div>
+        <p class="datosContactoTextoDir">Ameghino 190, 1er Piso, Depto 1, Monte Grande.</p>
+        <div class="datosContactoTel"><img class="datosContactoImg" src="../Imagenes/outline_phone_iphone_black_24dp.png" alt=""></div>
+        <p class="datosContactoTextoTel">(011) 5725-5332</p>
+        <div class="datosContactoMail"><img class="datosContactoImg" src="../Imagenes/outline_email_black_24dp.png" alt=""></div>
+        <p class="datosContactoTextoMail">estudioesquivelpresas@gmail.com</p>
     </section>
     <section class="seccionFormularioContacto">
     <form action="" class="formularioContacto">
@@ -62,19 +66,23 @@
         <div class="formularioContactoItem"><label for="telefono">*</label>
         <input type="tel" name="telefono" id="" placeholder="Teléfono" required></div>
         <!-- Dejar mensaje -->
-        <div class="formularioContactoItem"><label for="mensaje">*</label>
-        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"required></textarea></div>
-        
+        <div class="formularioContactoItem"><label for="mensaje">*</label>        
+            <input type="mensaje" name="mensaje" id="mensajeBox" placeholder="Mensaje" required>
+        </div>
         <!-- BOTONES -->
         <!-- Boton Consultar -->
-        <input type="submit" value="Consultar">  
+        <input type="submit" value="Consultar" class="botonConsultar">  
     </form>
     </section>
     <section class="seccionGoogleMaps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.6003040227074!2d-58.46745998560125!3d-34.81599638040507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd16186776f99%3A0x86c7501a4100466d!2sFlorentino%20Ameghino%20190%2C%20B1842CAC%20Monte%20Grande%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646075602011!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
     </div>
-
+    <div class="botonWssap">
+        <a href="https://wa.me/541157255332?text=Me%20gustaría%20hacer%20una%20consulta%20al%20estudio" class="whatsappLink" target="_blank"> 
+        <img src="../Imagenes/whatsapp.png" alt="" class="whatsapp">
+        </a>
+    </div>
 
     <!-- INICIO DEL PIE DE PAGINA -->
     <footer id="footer">
