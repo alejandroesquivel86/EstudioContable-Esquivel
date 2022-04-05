@@ -6,39 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="shortcut icon" href="../Imagenes/favicon.ico" type="image/x-icon">
     <title>EstudioPresasEsquivel - Servicios</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <!-- css -->
-    <link rel="stylesheet" href="../Estilos/estilos.css">
-</head>
-<body class="contenedorPresupuesto">
-    <header class="headerPresupuesto">
-            <h3 id="logo">
-                <acronym title="Estudio Presas Esquivel">
-                    <a href="../index.html">
-                    <img src="../Imagenes/Esquivel Logo.png" alt="EstudioPresasEsquivelLogo">                
-                    </a>
-                </acronym>
-            </h3>
-        <nav class="menu">
-            <div class="contenedorMenu">
-                <ul class="menuLista">
-                    <li class="menuOpciones"><a href="../index.html">Home</a></li>
-                    <li class="menuOpciones"><a href="../paginas/servicios.html">Servicios</a></li>
-                    <li class="menuOpciones"><a href="../paginas/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-                    <li class="menuOpciones"><a href="../paginas/presupuestos.html">Presupuestos</a></li>
-                    <li class="menuOpciones"><a href="../paginas/contacto.html">Contacto</a></li>                    
-                </ul>
-            </div>
-        </nav>        
-    </header>    
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Poppins:wght@300;400;500&family=Barlow:wght@100;300&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <!-- css -->
+     <link rel="stylesheet" href="../Estilos/estilos.css">
+ </head>
+ <body class="cantainer-fluid bodyIndex">
+     <header class="row">  
+     </header>
+     <div class="container-fluid contenerdorMenu">
+         <nav class="navbar navbar-expand-lg navbar-light">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="../index.html"><img src="../Imagenes/Esquivel Logo.png" alt="EstudioPresasEsquivelLogo" id="logo">
+                 </a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav ms-auto text-center menu">
+                     <li class="nav-item">
+                         <a class="nav-link" href="../index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="../paginas/preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="../paginas/presupuestos.html">Presupuestos</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                     </li>
+                 </ul>
+             </div>
+             </div>
+         </nav>
+     </div>
+     <div class="row">  
     <h1 class="tituloPresupuesto">
         PRESUPUESTOS
     </h1>
-    <div class="contenedorPrincipalPresup">
+</div>
+<div class="row">
+
+</div> 
+    <div class="row contenedorPrincipalPresup">
         <!-- <div class="contenedorImagenPresup">
         <img src="../Imagenes/presupuesto.png" alt="presupuesto" class="mediaPresupuesto">    
         </div> -->
@@ -47,27 +67,67 @@
         <p class="presupuestoSubtitulo">Solicitud de presupuesto personalizado</p>        
         <!-- RADIO BUTTON -->
         <div class="presupuesto">
-            <label for="presupuesto">¿Qué querés presupuestar?</label>   
-        <div class="presupuestoRadio"><input class="presupuestoTipo" type="radio" name="presupuesto" value="1">Inscripción</div>
-        <div class="presupuestoRadio"><input class="presupuestoTipo" type="radio" name="presupuesto" value="2">Inscripción + Mensualidad</div>
-        <div class="presupuestoRadio"><input class="presupuestoTipo" type="radio" name="presupuesto" value="3">Mensualidad</div>
-        <div class="presupuestoRadio"><input class="presupuestoTipo" type="radio" name="presupuesto" value="4">Plan de Pagos</div>
-        <div class="presupuestoRadio"><input class="presupuestoTipo" type="radio" name="presupuesto" value="5">Regularizar Situación</div>
-        <div class="presupuestoRadio"><input class="presupuestoTipo" type="radio" name="presupuesto" value="6">Consulta Profesional</div>
+            <label for="presupuesto">¿Qué querés presupuestar?</label>  
+            <div class="contenedorChecks">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Inscripción
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Inscripción + Mensualidad
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Mensualidad
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Regularizar Situación
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Plan de Pagos
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Consulta Profesional
+                </label>
+            </div>
+            </div>
         <!-- Datos de contacto -->
-        <section>*<input type="text" name="localidad" id="" placeholder="¿De dónde sos? Provincia y Localidad" required></section>
-        <section>*<input type="tel" name="celular" id="" placeholder="Número de Whatsapp" required></section>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">* Localidad</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">* Whatsapp</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
         <!-- BOTONES -->
         <!-- Boton Consultar -->
-        <input type="submit" value="Enviar">        
+        <div class="contenedorBotones">
+        <input class="btn btn-primary" type="submit" value="Enviar">        
         <!-- Boton Limpiar -->
-        <input type="reset" value="Limpiar">
+        <input class="btn btn-primary" type="reset" value="Limpiar">
+        </div>
         </div>
         </form> 
         </div>             
     </div>
     <!-- INICIO DEL PIE DE PAGINA -->
-    <footer id="footer">
+    <footer id="footer" class="row">
         <!-- Más del Estudio Contable -->
         <div class="footerColumnas">
             <div class="masDelEstudio">
@@ -91,5 +151,8 @@
         <!-- Copyright -->
         <p class="copyright">© Copyright 2022-2022 Esquivel Alejandro - Todos los Derechos Reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
 </html>

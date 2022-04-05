@@ -5,10 +5,10 @@
 }
 
 html {
-    height: 100%;
+    height: 100%;    
 }
 body {
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 /*Paleta de Colores*/
@@ -34,56 +34,56 @@ Pastel
 
 */
 
-/*MENU*/
-
-#logo{
-    height: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
-    top: 0;
-    left: 0;
-    background-color: white;
-    /*width: 100%;*/
+/*Body*/
+.bodyIndex{
+    margin: 15px;
 }
 
-.menu{    
-    font-size: 16px;    
-    padding: 10px;
+/*Menu*/
+.menu{   
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;  
+    padding: 10px;    
     border: 0;
     outline: 0;
     top: 0;
-    right: 0;    
-}
-.menu a:hover{
-    background-color:blue; 
-    color: white;
-    padding: 10px;    
-}
-
-.menu div ul li {
-    display: inline-block;
-    padding: 15px;
-}
-
-/*MENU - Estilo Lista sin Bullet*/
-
-.menuLista{
-    font-family: Arial, Helvetica, sans-serif;
-    list-style-type: square;
+    right: 0;
+    background-color: white !important;    
 } 
 
-nav ul a{
-    text-decoration: none;   
-    color: black;
-    padding: 5px;
+.menu a{
+    font-weight: 1000!important;
+    color: black!important;
 }
 
+.menu a:hover{
+    background-color:#0193ff; 
+    color: white !important;
+    padding: 10px;
+    border-radius:5px;   
+}
 
-/*BODY*/
+/*main*/
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;    
+	height:38.5rem;
+	max-width: 100%;
+	position: relative
+}
+
+.imagenCaminito {
+    background-image: url('../Imagenes/portada.jpg');    
+} 
 
 .nombreEstudio{
     font-family: 'Roboto', sans-serif;    
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     text-align: center;
     margin-block-start: 0.67em;
@@ -99,16 +99,30 @@ nav ul a{
     margin-block-end: 0.67em;
 }
 
+.quienesSomos{
+    font-family: 'Open Sans', sans-serif;  
+    font-style: italic;  
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-block-start: 1.00em;
+    margin-block-end: 1.00em;
+    padding: 5% 20% 5% 20%; 
+}
+
 .equipoPresentacion{
-    margin: 0;
+    /* margin: 0; */
     display: grid;  
     align-content: stretch;
     justify-items: stretch;   
     grid-template-columns: 1fr 1fr ;    
-    grid-template-rows: 1fr; 
+    grid-template-rows: 1fr 1fr; 
     grid-template-areas: 
+    "andrea alejandro"
     "andrea alejandro";
     }
+
 .equipoPresentacion{
     background: #8A2387;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
@@ -132,26 +146,18 @@ nav ul a{
     margin-block-end: 1em;
 }
 
-.quienesSomos{
-    font-family: 'Roboto', sans-serif;    
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    margin-block-start: 1.00em;
-    margin-block-end: 1.00em;
-}
-
 .fotoAndrea{
     left: 25%;
-    width: 38%;
-    border-style: solid;    
+    width: 45%;
+    border-style: solid;  
+    border-radius: 50%;  
 }
 
 .fotoAle{
     left: 25%;
-    width: 50%;
-    border-style: solid;    
+    width: 45%;
+    border-style: solid;  
+    border-radius: 50%;    
 }
 
 .fotoAndreaBorde{
@@ -182,12 +188,11 @@ section article p{
 #footer{
     background-color:black;
     font-size: 12px;
-    color: white;    
-    height: inherit;  
-}
+    color: white;  
+    }
 
 #footer h4{
-font-family: 'Poppins', sans-serif;
+font-family: 'Barlow', sans-serif;
 font-size: 16px;
 }
 
@@ -227,55 +232,6 @@ display: block;
 }
 
 
-/*GRIDS INDEX*/
-
-.contenedorIndex {
-    display: grid;  
-    align-content: stretch;
-    justify-items: stretch;   
-    grid-template-columns: 1fr 1fr 1fr 1fr;    
-    grid-template-rows: 0.10fr 0.10fr 0.10fr repeat(3, 1fr) 0.50fr; 
-    grid-template-areas: 
-    "nav nav nav nav "
-    "nosotros nosotros nosotros nosotros"
-    "servicio servicio servicio servicio"
-    "somos somos somos somos"
-    "presentacion presentacion presentacion presentacion"
-    "presentacion presentacion presentacion presentacion"
-    "footer footer footer footer"
-    ;}
-
-    .headerIndex {
-        grid-area: nav;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 10px 10px;
-    }
-
-    .nombreEstudio{
-        grid-area: nosotros;
-        margin: 10px 10px;
-    }
-
-    .nombreEstudioServicio{
-        grid-area: servicio;
-        margin: 10px 10px;
-    }
-
-    .quienesSomos{
-        grid-area: somos;
-        margin: 10px 10px;
-    }
-
-    .equipoPresentacion {
-        grid-area: presentacion;        
-    }
-
-    #footer {
-        grid-area: footer;        
-    }
-
 /*SERVICIOS*/
 
 h1 {
@@ -306,39 +262,17 @@ h1 {
     margin: 5px;
 }
 
-/*GRID SERVICIO*/
-        .contenedorServicios {
-        display: grid;  
-        align-content: stretch;
-        justify-items: stretch;   
-        grid-template-columns: 1fr 1fr 1fr 1fr;    
-        grid-template-rows: 0.10fr 0.10fr repeat(2, 1fr) 0.50fr; 
-        grid-template-areas: 
-        "nav nav nav nav"        
-        "tituloserv tituloserv tituloserv tituloserv"
-        "servicios servicios servicios servicios"
-        "servicios servicios servicios servicios"        
-        "footer footer footer footer"
-        ;}
-
-        .headerServicio {
-            grid-area: nav;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin: 10px 10px;
-        }
-
-        .tituloServ{
-            grid-area: tituloserv;
-        }
-
-        .servicios{
-            grid-area: servicios;
-        }
 
 /*PREGUNTAS FRECUENTES*/
 
+.inputBuscar{
+    width: 30%;
+    margin-right: 10px;
+}
+
+.botonBuscar:hover{
+    background-color: #0193ff !important;
+}
 .buscador{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -375,40 +309,6 @@ ol{
     width: 65%;
     height: auto;
 }
-/*GRID PREGUNTAS*/
-
-    .contenedorPreguntas {
-    display: grid;  
-    align-content: stretch;
-    justify-items: stretch;   
-    grid-template-columns: 1fr 1fr 1fr 1fr;    
-    grid-template-rows: 0.10fr 0.10fr 1fr 1fr 1fr 1fr 0.20fr; 
-    grid-template-areas: 
-    "nav nav nav nav"        
-    "titulopreg titulopreg titulopreg titulopreg"
-    "preguntas preguntas preguntas preguntas"
-    "preguntas preguntas preguntas preguntas"
-    "preguntas preguntas preguntas preguntas"
-    "preguntas preguntas preguntas preguntas"        
-    "footer footer footer footer"
-    ;}
-
-    .headerPregunta {
-        grid-area: nav;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 10px 10px;
-    }
-
-    .tituloPreguntas{
-        grid-area: titulopreg;
-    }
-
-    .preguntas{
-        grid-area: preguntas;
-    }
-
 
 /*PRESUPUESTOS*/
 
@@ -420,12 +320,17 @@ ol{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;    
     list-style-type: none;    
-    margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #dee2e6;
+    border-width: 1px;
 }
 
 .presupuestoSubtitulo{    
@@ -441,124 +346,36 @@ ol{
 .mediaPresupuesto{
         width: 100%;        
 }
+.contenedorPrincipalPresup{
+    margin-top: 5%;
+    margin-bottom: 9%;
+}
 
-/* .contenedorImagenPresup{
-    width: 33%;
-}  */
+.contenedorChecks{
+    margin-bottom: 20px;
+}
 
-/*GRID PRESUPUESTO*/
-
-    .contenedorPresupuesto {
-    display: grid;  
-    align-content: stretch;
-    justify-items: stretch;   
-    grid-template-columns: 1fr 1fr 1fr 1fr;    
-    grid-template-rows: 0.10fr 0.10fr 1fr 0.20fr; 
-    grid-template-areas: 
-    "nav nav nav nav"        
-    "titulopreg titulopreg titulopreg titulopreg"
-    "presupuesto presupuesto presupuesto presupuesto"   
-    "footer footer footer footer"
-    ;}
-
-    .headerPresupuesto {
-        grid-area: nav;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 10px 10px;
-    }
-
-    .tituloPresupuesto {
-        grid-area: titulopreg;
-    }
-
-    .contenedorPrincipalPresup{
-        grid-area: presupuesto;    
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 10px 10px;     
-    }
- 
+.contenedorBotones{
+    margin-bottom: 20px;
+}
 
 /*CONTACTO*/
+.contenedorPrincipalContacto{
+    margin-top: 5%;
+    margin-bottom: 6%;
+}
+
 .seccionDatosContacto{
-    margin: 30px;
     margin-top: 0px;
     padding: 3px 10px;
     height: 300px;    
     border: #65C8EE 2px solid;
     border-radius: 20px;    
-    display: grid;
-    align-items: center;
-    justify-items: center;        
-    grid-template-columns: .1fr 1fr;    
-    grid-template-rows: 0.05fr 0.05fr 0.05fr; 
-    grid-template-areas: 
-    "dir dirText"        
-    "tel telText"
-    "mail mailText";   
 }
 
 .datosContactoDir{
     margin: 5px;  
-    grid-area: dir;
-    align-items: center;
-    justify-items: center;    
-}
 
-.datosContactoTextoDir{
-    grid-area: dirText;
-    justify-self: left;
-}
-.datosContactoTel{
-    grid-area: tel;
-    align-items: center;
-    justify-items: center;    
-}
-.datosContactoTextoTel{
-    grid-area: telText;
-    justify-self: left;
-}
-.datosContactoMail{
-    grid-area: mail;
-    align-items: center;
-    justify-items: center;    
-}
-.datosContactoTextoMail{
-    grid-area: mailText;
-    justify-self: left;
-}
-
-.datosContactoImg {
-    height: 20px;    
-}
-
-.formularioContacto{
-    margin: 30px;
-    margin-top: 0px;
-    padding: 3px 10px;
-    height: 300px;
-    border: #65C8EE 2px solid;
-    border-radius: 20px;    
-}
-
-.formularioContactoItem{
-    display: block;
-    margin: 10px;
-}
-
-.botonConsultar{
-    position: relative;
-    left: 40%;
-}
-
-.seccionDatosContacto{
-    width: 33%;
-}
-.seccionFormularioContacto{
-    width: 33%;
 }
 
 #mensajeBox {
@@ -574,7 +391,7 @@ ol{
 
 
 .seccionGoogleMaps{
-    width: 33%;
+    /* width: 33.33%; */
     transition: all 3s;
 }
 
@@ -598,81 +415,12 @@ ol{
     z-index:100;    
   }
 
-
-
-
-/*GRID CONTACTO*/
-
-.contenedorContacto {
-    display: grid;  
-    align-content: stretch;
-    justify-items: stretch;   
-    grid-template-columns: 1fr 1fr 1fr 1fr;    
-    grid-template-rows: 0.10fr 0.10fr 1fr 0.20fr; 
-    grid-template-areas: 
-    "nav nav nav nav"        
-    "titulocontacto titulocontacto titulocontacto titulocontacto"
-    "contacto contacto contacto contacto"   
-    "footer footer footer footer"
-    ;}
-
-    .headerContacto {
-        grid-area: nav;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 10px 10px;
-    }
-
-    .tituloContacto {
-        grid-area: titulocontacto;
-    }
-
-    .contenedorPrincipalContacto{
-        grid-area: contacto;    
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 10px 10px;     
-    }
-
 /*RESPONSIVE*/
 
 @media screen and (max-width:500px) {
-    /*HEADER*/
-    .headerIndex {
-    flex-direction: column;
-    align-items: center;
-    }
 
-    .headerServicio {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    }
-    
-    .headerPregunta {
-    flex-direction: column;
-    align-items: center;
-    display: flex;    
-    }
-
-    .headerPresupuesto {
-    flex-direction: column;
-    align-items: center;
-    display: flex;    
-    }    
-
-    .headerContacto {
-    flex-direction: column;
-    align-items: center;
-    display: flex;    
-    }    
-
-    .contenedorMenu ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    #logo{
+        width: 120px;
     }
 
     /*BODY INDEX*/
@@ -682,14 +430,13 @@ ol{
         align-items: center;
     }
 
-    .hola{
-        text-align: center;
+    .inputBuscar{
+        width: 100%;
+        margin-right: 10px;
     }
 
-    /*CONTACTO*/
-    .contenedorPrincipalContacto{
-        flex-direction: column;
-        align-items: center;
+    .hola{
+        text-align: center;
     }
 
     .seccionDatosContacto{
@@ -737,48 +484,17 @@ ol{
 
 }
 
-@media screen and (max-width:768px) {
-    .headerIndex {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width:992px) {
+    #logo{
+        width: 150px;
     }
 
-    .headerServicio {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    }
-        
-    .headerPregunta {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    }
-    
-    .headerPresupuesto {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    }    
-    
-    .headerContacto {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    }    
-           
-    .contenedorMenu ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .inputBuscar{
+        width: 50%;
+        margin-right: 10px;
     }
 
     /*CONTACTO*/
-    .contenedorPrincipalContacto{
-        flex-direction: column;
-        align-items: center;
-    }
-
     .seccionDatosContacto{
         width: 100%;
         display: flex;
