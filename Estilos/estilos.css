@@ -40,6 +40,10 @@ Pastel
 }
 
 /*Menu*/
+.contenerdorMenu{
+height: 20vh;
+}
+
 .menu{   
     font-family: 'Barlow';
     font-size: 16px;
@@ -72,14 +76,55 @@ Pastel
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;    
-	height:38.5rem;
+	height:80vh;
 	max-width: 100%;
 	position: relative
+
 }
 
+.textoParallax{
+	color:black;
+	font-size: 2rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	bottom:10%;
+	width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);     
+}
 .imagenCaminito {
     background-image: url('../Imagenes/portada.jpg');    
-} 
+}}
+
+.textoCentrado{
+    text-align: center;
+}
+
+.btnConocernos{
+    font-family: 'Barlow', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: black;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #0193ff;    
+}
+
+.btnConocernos:hover {
+    background: #0193ff;     ;
+    color: #fff;
+    text-decoration: none;
+}
 
 .nombreEstudio{
     font-family: 'Roboto', sans-serif;    
@@ -113,6 +158,10 @@ Pastel
 
 .equipoPresentacion{
     /* margin: 0; */
+    height: 80vh;
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: grid;  
     align-content: stretch;
     justify-items: stretch;   
@@ -123,11 +172,7 @@ Pastel
     "andrea alejandro";
     }
 
-.equipoPresentacion{
-    background: #8A2387;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 .andrea {
     grid-area: andrea;        
     }
@@ -186,6 +231,7 @@ section article p{
 
 /*FOOTER*/
 #footer{
+    height: 20vh;
     background-color:black;
     font-size: 12px;
     color: white;  
@@ -449,6 +495,7 @@ ol{
     }
     
     .equipoPresentacion{
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -541,6 +588,10 @@ ol{
     }
     /*FOOTER*/
 
+    #footer{
+        height: auto;
+    }
+
     .footerColumnas{
         flex-direction: column;
         align-items: center;
@@ -560,6 +611,7 @@ ol{
         width: 100%;
         text-align: center;
     }
+
 
 
 
@@ -605,6 +657,10 @@ ol{
     }
 
     /*FOOTER*/
+
+    #footer{
+        height: auto;
+    }
 
     .footerColumnas{
         flex-direction: column;
