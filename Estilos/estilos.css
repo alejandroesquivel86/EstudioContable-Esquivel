@@ -316,6 +316,15 @@ ol{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.imgPresupuesto{
+    width: 20%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
 .formpresupuesto{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;    
@@ -424,6 +433,21 @@ ol{
     }
 
     /*BODY INDEX*/
+    .nombreEstudio{
+        font-size: 2rem;
+    }
+    .nombreEstudioServicio{
+        font-size: 1rem;
+    }
+    .parallax{
+        height: 20rem;
+    }
+
+    .quienesSomos{
+        font-size: 18px;
+        padding: 5%;
+    }
+    
     .equipoPresentacion{
         display: flex;
         flex-direction: column;
@@ -439,26 +463,82 @@ ol{
         text-align: center;
     }
 
+    .tituloServ{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .servicios{
+        font-size: 0.9rem;
+    }
+
+    .tituloPreguntas{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .preguntas{
+        font-size: 0.9rem;
+    }
+
+    .imgPresupuesto{
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+
+    .tituloPresupuesto{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .formpresupuesto {
+        font-size: 0.75rem;
+        margin: 10%;      
+        padding: 5%;  
+    }
+
+    .input-group-text{
+        font-size: 0.75rem;
+    }
+
+    .tituloContacto{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
     .seccionDatosContacto{
-        width: 100%;
+        margin: 0%;
+        padding: 0;
+        font-size: 0.75rem;        
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .seccionFormularioContacto{
-        width: 100%;
+        margin: 1%;
+        font-size: 0.75rem;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .seccionGoogleMaps{
+        margin: 1%;   
+        padding: 0;     
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
+    .botonWssap{
+        margin: 1%;   
+        padding: 0;             
+    }
     /*FOOTER*/
 
     .footerColumnas{
@@ -480,7 +560,8 @@ ol{
         width: 100%;
         text-align: center;
     }
-    
+
+
 
 }
 
@@ -492,6 +573,14 @@ ol{
     .inputBuscar{
         width: 50%;
         margin-right: 10px;
+    }
+
+    .imgPresupuesto{
+        width: 60%;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
     }
 
     /*CONTACTO*/
@@ -538,6 +627,12 @@ ol{
     }    
 }
 
-    
+@media screen and (max-width:2560px) {
+    .contenedorPrincipalContacto{
+        font-size: 1.2rem;
+        margin-top: 10%;
+        margin-bottom: 17%;
+
+    }
 
 
