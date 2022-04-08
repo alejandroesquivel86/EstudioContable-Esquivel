@@ -89,7 +89,7 @@ height: 20vh;
 	left: 10%;
 	position: absolute;
 	text-align: center;
-	bottom:10%;
+	bottom:30%;
 	width: 80%;
     background-color: rgba(255, 255, 255, 0.8);     
 }
@@ -158,10 +158,8 @@ height: 20vh;
 
 .equipoPresentacion{
     /* margin: 0; */
-    height: 80vh;
-    background: #8A2387;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    height: 75vh;
     display: grid;  
     align-content: stretch;
     justify-items: stretch;   
@@ -172,49 +170,68 @@ height: 20vh;
     "andrea alejandro";
     }
 
-
 .andrea {
-    grid-area: andrea;        
+    grid-area: andrea;  
+    position: relative;  
+    margin-block-start: 1em;
+    margin-block-end: 1em;    
     }
 
+.franja{
+    position: absolute;
+    height: 6vh;
+    width: 25vw;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: auto;    
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: -9999;
+}    
+
 .alejandro{
-        grid-area: alejandro;        
+        position: relative;      
+        grid-area: alejandro;             
+        margin-block-start: 1em;
+        margin-block-end: 1em;
     }
 
-.andrea{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
 
-.alejandro{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+.foto{
+    position: relative;
+    position: absolute;
+    left: 10%;
 }
 
 .fotoAndrea{
-    left: 25%;
-    width: 45%;
+    width: 25%;
     border-style: solid;  
-    border-radius: 50%;  
+    border-radius: 50%;      
+    left: 25%;
+    border-style: solid;
 }
 
 .fotoAle{
-    left: 25%;
-    width: 45%;
+    width: 25%;
     border-style: solid;  
-    border-radius: 50%;    
+    border-radius: 50%;   
+    left: 25%;
+    border-style: solid; 
 }
 
-.fotoAndreaBorde{
-    position: relative;
-    left: 25%;
-    border-style: solid;
-}
+.textoChicos{
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    margin-top: 8vh;
+    left: 35%;
+    padding: 5%;
+    height: 50vh;
+    max-height: 70vh;
+    overflow: hidden;
+    
 
-.fotoAleBorde{
-    position: relative;
-    left: 25%;
-    border-style: solid;
 }
 
 .hola{  
@@ -225,13 +242,13 @@ height: 20vh;
 section article p{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
 /*FOOTER*/
 #footer{
-    height: 20vh;
+    height: 25vh;
     background-color:black;
     font-size: 12px;
     color: white;  
@@ -285,6 +302,20 @@ h1 {
     font-size: 28px;
     font-weight: 800;
     text-align: center;
+}
+
+.tarjetas{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardPersonalizada{
+    margin-top: 15px;
+}
+
+.tituloServ{
+    transition: all 3s;
 }
 
 .servicios{
@@ -472,10 +503,26 @@ ol{
 
 /*RESPONSIVE*/
 
-@media screen and (max-width:500px) {
+@media screen and (min-width:320px) and (max-width:991px) {
 
     #logo{
         width: 120px;
+    }
+
+    .parallax{
+        z-index: -2;
+    }
+
+    .textoParallax{
+        bottom:10%;
+    }
+
+    h1{
+        z-index: -1;
+    }
+
+    .seccionDatosContacto{
+        z-index: -999;
     }
 
     /*BODY INDEX*/
@@ -489,6 +536,10 @@ ol{
         height: 20rem;
     }
 
+    .textoParallax{
+        bottom:10%;
+    }
+
     .quienesSomos{
         font-size: 18px;
         padding: 5%;
@@ -499,12 +550,84 @@ ol{
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        }
+    
+    .andrea {
+        margin-block-start: 1em;
+        margin-block-end: 1em;    
+        }
+    
+    .franja{
+        width: 80%;
+    }    
+    
+    .alejandro{                        
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+        }
+    
+    .presentacionAle{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .presentacionAndrea{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto{    
+        position: relative;
+        margin: auto;
+        z-index: 999;
+        left: 0;
+    }
+    
+    .fotoAndrea{
+        width: 40%;
+        border-style: solid;  
+        border-radius: 50%;      
+        left: 25%;
+        border-style: solid;
+    }
+    
+    .fotoAle{
+        width: 40%;
+        border-style: solid;  
+        border-radius: 50%;   
+        left: 25%;
+        border-style: solid; 
+    }
+    
+    .textoChicos{        
+        position:relative;
+        margin: 5px;
+        left: 0;
+        padding: 5%;
+        height: auto;
+        max-height: auto;
+        overflow: hidden;            
+    }
+    
+    .hola{  
+        font-family: 'Caveat', cursive;
+        font-size: 40px;
+    }
+    
+    section article p{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-size: 1.4rem;
+        font-weight: 300;
     }
 
     .inputBuscar{
         width: 100%;
         margin-right: 10px;
-    }
+    }*/
 
     .hola{
         text-align: center;
@@ -512,8 +635,19 @@ ol{
 
     .tituloServ{
         margin-top: 20px;
-        font-size: 1.5rem;
+        font-size: 1.5rem;        
     }
+
+    .tarjetas{
+        margin-left: auto;
+        margin-right: auto;   
+        z-index: -999;     
+    }
+
+    .cardPersonalizada{
+
+    }
+    
 
     .servicios{
         font-size: 0.9rem;
@@ -617,9 +751,13 @@ ol{
 
 }
 
-@media screen and (max-width:992px) {
+@media screen and (min-width:992px) and (max-width:1023px) {
     #logo{
         width: 150px;
+    }
+
+    .textoParallax{
+        bottom:10%;
     }
 
     .inputBuscar{
@@ -633,6 +771,9 @@ ol{
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;
+    }
+    section article p{
+        font-size: 0.8rem;
     }
 
     /*CONTACTO*/
@@ -683,12 +824,38 @@ ol{
     }    
 }
 
-@media screen and (max-width:2560px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    
+    section article p{
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+@media screen and (min-width:1440px) and (max-width:2559px) {
+    section article p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:2560px) {
     .contenedorPrincipalContacto{
         font-size: 1.2rem;
         margin-top: 10%;
         margin-bottom: 17%;
-
     }
 
+    .menu{
+        font-size: 1.5rem;
+    }
+
+    .quienesSomos{
+        font-size: 2rem;
+    }
+
+    section article p{
+        font-size: 1.8rem;
+    }
+}
 
