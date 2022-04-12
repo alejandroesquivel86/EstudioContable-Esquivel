@@ -1,0 +1,859 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html {
+    height: 100%;    
+}
+body {
+    min-height: 100vh;
+}
+
+/*Paleta de Colores*/
+
+/*Azul Oscuro
+#104471;rgba(16,68,113,255)
+#114470;rgba(17,68,112,255)
+
+Celeste
+#77c9ed;rgb(119,201,237)
+#74c9ee;rgba(116,201,238,255)
+
+Turquesa
+#3391c1;rgb(51,145,193)
+#289cd8;rgb(40,156,216)
+
+Grises (Fuente)
+#949494;rgb(148,148,148)
+#707070;rgba(112,112,112,255)
+
+Pastel
+#e7eaec;rgb(231,234,236)
+
+*/
+
+/*Body*/
+.bodyIndex{
+    margin: 15px;
+}
+
+/*Menu*/
+.contenerdorMenu{
+height: 20vh;
+}
+
+.menu{   
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;  
+    padding: 10px;    
+    border: 0;
+    outline: 0;
+    top: 0;
+    right: 0;
+    background-color: white !important;    
+} 
+
+.menu a{
+    font-weight: 1000!important;
+    color: black!important;
+}
+
+.menu a:hover{
+    background-color:#0193ff; 
+    color: white !important;
+    padding: 10px;
+    border-radius:5px;   
+}
+
+.navbarZindex{
+    z-index: 3;
+}
+
+/*main*/
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;    
+	height:80vh;
+	max-width: 100%;
+	position: relative
+
+}
+
+.textoParallax{
+	color:black;
+	font-size: 2rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	bottom:30%;
+	width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);     
+}
+.imagenCaminito {
+    background-image: url('../Imagenes/portada.jpg');    
+}}
+
+.textoCentrado{
+    text-align: center;
+}
+
+.btnConocernos{
+    font-family: 'Barlow', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: black;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #0193ff;    
+}
+
+.btnConocernos:hover {
+    background: #0193ff;     ;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nombreEstudio{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+.nombreEstudioServicio{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+.quienesSomos{
+    font-family: 'Open Sans', sans-serif;  
+    font-style: italic;  
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-block-start: 1.00em;
+    margin-block-end: 1.00em;
+    padding: 5% 20% 5% 20%; 
+}
+
+.equipoPresentacion{
+    /* margin: 0; */
+    position: relative;
+    height: 75vh;
+    display: grid;  
+    align-content: stretch;
+    justify-items: stretch;   
+    grid-template-columns: 1fr 1fr ;    
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "andrea alejandro"
+    "andrea alejandro";
+    }
+
+.andrea {
+    grid-area: andrea;  
+    position: relative;  
+    margin-block-start: 1em;
+    margin-block-end: 1em;    
+    }
+
+.franja{
+    position: absolute;
+    height: 6vh;
+    width: 25vw;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: auto;    
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: -9999;
+}    
+
+.alejandro{
+        position: relative;      
+        grid-area: alejandro;             
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+
+.foto{
+    position: relative;
+    position: absolute;
+    left: 10%;
+}
+
+.fotoAndrea{
+    width: 25%;
+    border-style: solid;  
+    border-radius: 50%;      
+    left: 25%;
+    border-style: solid;
+}
+
+.fotoAle{
+    width: 25%;
+    border-style: solid;  
+    border-radius: 50%;   
+    left: 25%;
+    border-style: solid; 
+}
+
+.textoChicos{
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    margin-top: 8vh;
+    left: 35%;
+    padding: 5%;
+    height: 50vh;
+    max-height: 70vh;
+    overflow: hidden;
+    
+
+}
+
+.hola{  
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+
+section article p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/*FOOTER*/
+#footer{
+    height: 25vh;
+    background-color:black;
+    font-size: 12px;
+    color: white;  
+    }
+
+#footer h4{
+font-family: 'Barlow', sans-serif;
+font-size: 16px;
+}
+
+#footer p{
+    font-family: 'Robot', sans-serif;
+    font-size: 12px;
+}
+
+.footerColumnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+.redesSociales a{
+display: block;
+}
+
+.masDelEstudio{
+    text-align: justify;
+    width: 33%;    
+}
+
+.redesSociales{
+    text-align: justify;
+    width: 33%;
+}
+
+.contacto{
+    text-align: justify;
+    width: 33%;
+}
+
+.copyright{
+    text-align: center;
+    width: 4fr;
+}
+
+
+/*SERVICIOS*/
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.tarjetas{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardPersonalizada{
+    margin-top: 15px;
+}
+
+.tituloServ{
+    transition: all 3s;
+}
+
+.servicios{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.serviciosLista{
+    margin: 15px;
+}
+
+.serviciosTitulo{
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.serviciosEstudio li{
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+
+/*PREGUNTAS FRECUENTES*/
+
+.inputBuscar{
+    width: 30%;
+    margin-right: 10px;
+}
+
+.botonBuscar:hover{
+    background-color: #0193ff !important;
+}
+.buscador{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.preguntas{
+    margin-bottom: 20px;
+}
+.preguntasLista{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.preguntasListaTitulo{
+    margin-left: 5px;
+    margin-top: 25px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+ol{
+    margin-left: 30px;
+}
+
+.fotoMonotributo{
+    margin: 10px 10px;
+    width: 65%;
+    height: auto;    
+}
+
+.media{
+    margin: 10px 10px;    
+    width: 65%;
+    height: auto;
+}
+
+/*PRESUPUESTOS*/
+
+.tituloPresupuesto{   
+    height: 10vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imgPresupuesto{
+    height: 30vh;
+    width: 40vw;
+    overflow: hidden; 
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.formpresupuesto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;    
+    list-style-type: none;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #dee2e6;
+    border-width: 1px;
+}
+
+.presupuestoSubtitulo{    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.presupuestoRadio{
+    display: block;
+}
+
+.mediaPresupuesto{
+        width: 100%;        
+}
+.contenedorPrincipalPresup{
+    margin-top: 5%;
+    margin-bottom: 9%;
+}
+
+.contenedorChecks{
+    margin-bottom: 20px;
+}
+
+.contenedorBotones{
+    margin-bottom: 20px;
+}
+
+/*CONTACTO*/
+.contenedorPrincipalContacto{
+    margin-top: 5%;
+    margin-bottom: 6%;
+}
+
+.seccionDatosContacto{
+    margin-top: 0px;
+    padding: 3px 10px;
+    height: 300px;    
+    border: #65C8EE 2px solid;
+    border-radius: 20px;    
+}
+
+.datosContactoDir{
+    margin: 5px;  
+
+}
+
+#mensajeBox {
+    height: 15px;
+    width: 169px;
+    transition: all 2s; 
+}
+
+#mensajeBox:focus{
+    height: 150px;
+    width: 237px;
+}
+
+
+.seccionGoogleMaps{
+    /* width: 33.33%; */
+    transition: all 3s;
+}
+
+.seccionGoogleMaps iframe{
+    width: 100%;
+}
+
+.seccionGoogleMaps:hover{
+    transform: scale(1.1,1.1);
+} 
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    color:#FFF;
+    text-align:center;
+    font-size:30px;
+    z-index:100;    
+  }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width:320px) and (max-width:991px) {
+
+    #logo{
+        width: 120px;
+    }
+
+    .parallax{
+        z-index: 1;
+    }
+
+    .textoParallax{
+        bottom:10%;
+    }
+
+    h1{
+        z-index: 1;
+    }
+
+    .seccionDatosContacto{
+        z-index: 1;
+    }
+
+    /*BODY INDEX*/
+    .nombreEstudio{
+        font-size: 2rem;
+    }
+    .nombreEstudioServicio{
+        font-size: 1rem;
+    }
+    .parallax{
+        height: 20rem;
+    }
+
+    .textoParallax{
+        bottom:10%;
+    }
+
+    .quienesSomos{
+        font-size: 18px;
+        padding: 5%;
+    }
+    
+    .equipoPresentacion{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        }
+    
+    .andrea {
+        margin-block-start: 1em;
+        margin-block-end: 1em;    
+        }
+    
+    .franja{
+        width: 80%;
+    }    
+    
+    .alejandro{                        
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+        }
+    
+    .presentacionAle{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .presentacionAndrea{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto{    
+        position: relative;
+        margin: auto;
+        z-index: 999;
+        left: 0;
+    }
+    
+    .fotoAndrea{
+        width: 40%;
+        border-style: solid;  
+        border-radius: 50%;      
+        left: 25%;
+        border-style: solid;
+    }
+    
+    .fotoAle{
+        width: 40%;
+        border-style: solid;  
+        border-radius: 50%;   
+        left: 25%;
+        border-style: solid; 
+    }
+    
+    .textoChicos{        
+        position:relative;
+        margin: 5px;
+        left: 0;
+        padding: 5%;
+        height: auto;
+        max-height: auto;
+        overflow: hidden;            
+    }
+    
+    .hola{  
+        font-family: 'Caveat', cursive;
+        font-size: 40px;
+    }
+    
+    section article p{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    .inputBuscar{
+        width: 100%;
+        margin-right: 10px;
+    }*/
+
+    .hola{
+        text-align: center;
+    }
+
+    .tituloServ{
+        margin-top: 20px;
+        font-size: 1.5rem;        
+    }
+
+    .tarjetas{
+        margin-left: auto;
+        margin-right: auto;   
+        z-index: -999;     
+    }
+
+    .servicios{
+        font-size: 0.9rem;
+    }
+
+    .tituloPreguntas{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .preguntas{
+        font-size: 0.9rem;
+    }
+
+    .imgPresupuesto{
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tituloPresupuesto{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .formpresupuesto {
+        font-size: 0.75rem;
+        margin: 10%;      
+        padding: 5%;  
+    }
+
+    .input-group-text{
+        font-size: 0.75rem;
+    }
+
+    .tituloContacto{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .seccionDatosContacto{
+        margin: 0%;
+        padding: 0;
+        font-size: 0.75rem;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccionFormularioContacto{
+        margin: 1%;
+        font-size: 0.75rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionGoogleMaps{
+        margin: 1%;   
+        padding: 0;     
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .botonWssap{
+        margin: 1%;   
+        padding: 0;             
+    }
+    /*FOOTER*/
+
+    #footer{
+        height: auto;
+    }
+
+    .footerColumnas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .masDelEstudio{
+        width: 100%;
+        text-align: center;
+    }
+
+    .redesSociales{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacto{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1023px) {
+    #logo{
+        width: 150px;
+    }
+
+    .textoParallax{
+        bottom:10%;
+    }
+
+    .inputBuscar{
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .imgPresupuesto{
+        width: 60%;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    section article p{
+        font-size: 0.8rem;
+    }
+
+    /*CONTACTO*/
+    .seccionDatosContacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccionFormularioContacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionGoogleMaps{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*FOOTER*/
+
+    #footer{
+        height: auto;
+    }
+
+    .footerColumnas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .masDelEstudio{
+        width: 100%;
+        text-align: center;
+    }
+
+    .redesSociales{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacto{
+        width: 100%;
+        text-align: center;
+    }    
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    
+    section article p{
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+@media screen and (min-width:1440px) and (max-width:2559px) {
+    section article p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .contenedorPrincipalContacto{
+        font-size: 1.2rem;
+        margin-top: 10%;
+        margin-bottom: 17%;
+    }
+
+    .menu{
+        font-size: 1.5rem;
+    }
+
+    .quienesSomos{
+        font-size: 2rem;
+    }
+
+    section article p{
+        font-size: 1.8rem;
+    }
+}
+

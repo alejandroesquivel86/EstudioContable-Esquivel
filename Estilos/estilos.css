@@ -69,6 +69,10 @@ height: 20vh;
     border-radius:5px;   
 }
 
+.navbarZindex{
+    z-index: 3;
+}
+
 /*main*/
 
 .parallax{
@@ -390,16 +394,17 @@ ol{
 /*PRESUPUESTOS*/
 
 .tituloPresupuesto{   
+    height: 10vh;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .imgPresupuesto{
-    width: 20%;
-    height: 20%;
+    height: 30vh;
+    width: 40vw;
+    overflow: hidden; 
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+    margin-right: auto;    
 }
 
 .formpresupuesto{
@@ -510,7 +515,7 @@ ol{
     }
 
     .parallax{
-        z-index: -2;
+        z-index: 1;
     }
 
     .textoParallax{
@@ -518,11 +523,11 @@ ol{
     }
 
     h1{
-        z-index: -1;
+        z-index: 1;
     }
 
     .seccionDatosContacto{
-        z-index: -999;
+        z-index: 1;
     }
 
     /*BODY INDEX*/
@@ -644,11 +649,6 @@ ol{
         z-index: -999;     
     }
 
-    .cardPersonalizada{
-
-    }
-    
-
     .servicios{
         font-size: 0.9rem;
     }
@@ -663,11 +663,9 @@ ol{
     }
 
     .imgPresupuesto{
-        width: 50%;
         height: 50%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
     }
 
     .tituloPresupuesto{
