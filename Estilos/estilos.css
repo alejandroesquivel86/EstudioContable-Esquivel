@@ -11,29 +11,6 @@ body {
     min-height: 100vh;
 }
 
-/*Paleta de Colores*/
-
-/*Azul Oscuro
-#104471;rgba(16,68,113,255)
-#114470;rgba(17,68,112,255)
-
-Celeste
-#77c9ed;rgb(119,201,237)
-#74c9ee;rgba(116,201,238,255)
-
-Turquesa
-#3391c1;rgb(51,145,193)
-#289cd8;rgb(40,156,216)
-
-Grises (Fuente)
-#949494;rgb(148,148,148)
-#707070;rgba(112,112,112,255)
-
-Pastel
-#e7eaec;rgb(231,234,236)
-
-*/
-
 /*Body*/
 .bodyIndex{
     margin: 15px;

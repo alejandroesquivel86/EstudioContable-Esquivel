@@ -1,0 +1,36 @@
+/*SERVICIOS*/
+
+.tituloServ {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    transition: all 3s;
+}
+
+.tarjetas{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    .cardPersonalizada{
+        margin-top: 15px;
+    }
+}
+
+.servicios{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    .serviciosLista{
+        margin: 15px;
+        .serviciosTitulo{
+            font-weight: 800;
+            text-decoration: underline;
+            .serviciosEstudio li{
+                margin-left: 25px;
+                margin-bottom: 10px;
+                margin: 5px;
+            }
+        }
+    }
+}
