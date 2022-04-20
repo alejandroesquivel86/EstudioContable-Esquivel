@@ -1,0 +1,186 @@
+/*RESPONSIVE*/
+
+@media screen and (min-width:320px) and (max-width:991px) {
+    header{
+        width: 50vw;
+    }
+
+    .contenedorMenu{
+        width: 95vw;
+    }
+
+    .tituloServ{
+        margin: 0;
+        width: 95vw;
+    }
+
+    .tarjetas{
+        width: 95vw;
+    }
+
+    .servicios{
+        width: 95vw;
+    }
+
+    /*FOOTER*/
+    #footer{
+        height: auto;
+        margin: 5px;
+        width: 100vw;
+    }
+    .footerColumnas{
+        flex-direction:column;
+        align-items:center;
+    }
+     
+    .masDelEstudio{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .redesSociales{
+        width: 100%;
+            text-align: center;
+    }
+    
+    .contacto{
+        width: 100%;
+        text-align: center;
+        }
+
+    .whatsapp {
+        bottom:50vh;
+        right: 6vw;
+        
+      }
+      
+    
+      .instagram{
+        bottom:56vh;
+        right: 6vw;        
+      }
+    
+      .facebook{
+        bottom:62vh;
+        right: 6vw;          
+      }
+}
+
+@media screen and (min-width:992px) and (max-width:1023px) {
+    /*FOOTER*/
+
+    #footer{
+        height: auto;
+        .footerColumnas{
+            flex-direction:column;
+            align-items:center;
+            .masDelEstudio{
+                width: 100%;
+                text-align: center;
+            }
+            .redesSociales{
+                width: 100%;
+                text-align: center;
+            }
+            .contacto{
+                width: 100%;
+                text-align: center;
+            }        
+        }
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    
+    section article p{
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+@media screen and (min-width:1440px) and (max-width:2559px) {
+    header{
+        width: 50vw;
+    }
+
+    .contenedorMenu{
+        width: 95vw;
+    }
+
+    .tituloServ{
+        margin: 0;
+        width: 95vw;
+    }
+
+    .tarjetas{
+        width: 95vw;
+    }
+
+    .servicios{
+        width: 95vw;
+    }
+
+    section article p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    header{
+        width: 50vw;
+    }
+
+    .contenedorMenu{
+        width: 95vw;
+    }
+
+    .tituloServ{
+        margin: 0;
+        width: 95vw;
+    }
+
+    .tarjetas{
+        width: 95vw;
+    }
+
+    .servicios{
+        width: 95vw;
+    }
+
+    section article p{
+        font-size: 1.5rem;
+    }
+
+    .whatsapp {
+        right: 6vw;        
+      }
+      
+    
+      .instagram{
+        right: 6vw;
+        
+      }
+    
+      .facebook{
+        right:6vw;
+      }
+
+    .contenedorPrincipalContacto{
+        font-size: 1.2rem;
+        margin-top: 10%;
+        margin-bottom: 17%;
+    }
+
+    .menu{
+        font-size: 1.5rem;
+    }
+
+    .quienesSomos{
+        font-size: 2rem;
+    }
+
+    section article p{
+        font-size: 1.8rem;
+    }
+}
