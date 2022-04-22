@@ -1,7 +1,8 @@
 /*Paleta de Colores*/
 /*Menu*/
 .contenerdorMenu {
-  height: 20vh; }
+  height: 20vh;
+  width: 95vw; }
   .contenerdorMenu .navbarZindex {
     z-index: 3; }
     .contenerdorMenu .navbarZindex .menu {
@@ -26,6 +27,8 @@
 
 /*FOOTER*/
 #footer {
+  width: 99vw;
+  margin-left: 0;
   height: 25vh;
   background-color: black;
   font-size: 12px;
@@ -56,6 +59,9 @@
     width: 4fr; }
 
 /*SERVICIOS*/
+header {
+  display: none; }
+
 .tituloServ {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
@@ -83,3 +89,150 @@
         margin-left: 25px;
         margin-bottom: 10px;
         margin: 5px; }
+
+/*EXTEND y MIXINS*/
+.redesSociales {
+  width: 95vw; }
+  .redesSociales .whatsapp, .redesSociales .instagram, .redesSociales .facebook {
+    height: 3vh;
+    width: 3vh;
+    position: fixed;
+    right: 3vw;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 100;
+    margin: 4px;
+    padding: 0px;
+    bottom: 26vh; }
+    .redesSociales .whatsapp:hover, .redesSociales .instagram:hover, .redesSociales .facebook:hover {
+      color: #25d366;
+      background-color: white; }
+  .redesSociales .instagram {
+    bottom: 30vh; }
+    .redesSociales .instagram:hover {
+      color: blue;
+      background-color: white; }
+  .redesSociales .facebook {
+    bottom: 35vh; }
+    .redesSociales .facebook:hover {
+      color: blue;
+      background-color: white; }
+
+/*MAPAS*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--facebook {
+  background-color: blue; }
+
+.btn--instagram {
+  background-color: blue; }
+
+.btn--whatsapp {
+  background-color: #25d366; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  header {
+    width: 50vw; }
+  .contenedorMenu {
+    width: 95vw; }
+  .tituloServ {
+    margin: 0;
+    width: 95vw; }
+  .tarjetas {
+    width: 95vw; }
+  .servicios {
+    width: 95vw; }
+  /*FOOTER*/
+  #footer {
+    height: auto;
+    margin: 5px;
+    width: 100vw; }
+  .footerColumnas {
+    flex-direction: column;
+    align-items: center; }
+  .masDelEstudio {
+    width: 100%;
+    text-align: center; }
+  .redesSociales {
+    width: 100%;
+    text-align: center; }
+  .contacto {
+    width: 100%;
+    text-align: center; }
+  .whatsapp, .redesSociales .instagram, .redesSociales .facebook {
+    bottom: 50vh;
+    right: 6vw; }
+  .instagram {
+    bottom: 56vh;
+    right: 6vw; }
+  .facebook {
+    bottom: 62vh;
+    right: 6vw; } }
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+  /*FOOTER*/
+  #footer {
+    height: auto; }
+    #footer .footerColumnas {
+      flex-direction: column;
+      align-items: center; }
+      #footer .footerColumnas .masDelEstudio {
+        width: 100%;
+        text-align: center; }
+      #footer .footerColumnas .redesSociales {
+        width: 100%;
+        text-align: center; }
+      #footer .footerColumnas .contacto {
+        width: 100%;
+        text-align: center; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  section article p {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  header {
+    width: 50vw; }
+  .contenedorMenu {
+    width: 95vw; }
+  .tituloServ {
+    margin: 0;
+    width: 95vw; }
+  .tarjetas {
+    width: 95vw; }
+  .servicios {
+    width: 95vw; }
+  section article p {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 2560px) {
+  header {
+    width: 50vw; }
+  .contenedorMenu {
+    width: 95vw; }
+  .tituloServ {
+    margin: 0;
+    width: 95vw; }
+  .tarjetas {
+    width: 95vw; }
+  .servicios {
+    width: 95vw; }
+  section article p {
+    font-size: 1.5rem; }
+  .whatsapp, .redesSociales .instagram, .redesSociales .facebook {
+    right: 6vw; }
+  .instagram {
+    right: 6vw; }
+  .facebook {
+    right: 6vw; }
+  .contenedorPrincipalContacto {
+    font-size: 1.2rem;
+    margin-top: 10%;
+    margin-bottom: 17%; }
+  .menu {
+    font-size: 1.5rem; }
+  .quienesSomos {
+    font-size: 2rem; }
+  section article p {
+    font-size: 1.8rem; } }

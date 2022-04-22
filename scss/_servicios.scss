@@ -1,4 +1,7 @@
 /*SERVICIOS*/
+header{
+    display: none;
+}
 
 .tituloServ {
     font-family: 'Roboto', sans-serif;
@@ -33,4 +36,59 @@
             }
         }
     }
+}
+
+/*EXTEND y MIXINS*/
+@mixin sizes($width, $height, $position, $right, $color, $border-radius) {
+    height: $height;
+    width: $width;
+    position: $position;
+    right: $right;
+    color: $color;
+    border-radius: $border-radius;
+ }
+
+.redesSociales{
+    width: 95vw;
+        .whatsapp {
+        @include sizes($btnRedesAlto, $btnRedesAncho, fixed, 3vw, white, 50px);      
+        text-align:center;    
+        z-index:100;           
+        margin: 4px;
+        padding: 0px;
+        bottom:$btnDistancia;    
+        &:hover{
+            color:#25d366;  
+            background-color: white;
+            }
+        }    
+    .instagram{
+        @extend .whatsapp;        
+        bottom:$btnDistancia+1vh+$btnRedesAlto;        
+        &:hover{
+            color: blue;  
+            background-color: white;
+        }
+    }
+    .facebook{
+        @extend .whatsapp;
+        bottom:$btnDistancia+3vh+$btnRedesAlto*2;        
+        &:hover{
+            color: blue;  
+            background-color: white;
+        }
+    }
+}
+
+/*MAPAS*/
+$redes: ( /*Declaramos nuestro mapa*/
+        facebook: blue,
+        instagram:  blue,
+        whatsapp: #25d366,
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
 }

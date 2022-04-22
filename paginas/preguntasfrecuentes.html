@@ -60,68 +60,177 @@
             <input class="form-control inputBuscar" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success botonBuscar" type="submit">Buscar</button>
           </form>
-    <section class="row preguntasListado">
-            <ul class="preguntasLista">
-                <li class="preguntasListaTitulo">Inscripciones</li>
-                <ol>
-                    <li>¿Que necesito para Inscribirme?</li>
-                    <li>¿Cuánto tiempo tarda?</li>
-                    <li>¿Cuánto me sale?</li>
-                </ol>
-                <li class="preguntasListaTitulo">Monotributo</li>
-                <ol>
-                    <li>¿Qué Categoría me corresponde?</li>                
-                    <li>¿Cuantó pago de Monotributo?</li>
-                    <img src="../Imagenes/monotributo.png" alt="Monotributo" class="fotoMonotributo">
-                    <li>¿Hasta cuánto puedo facturar en mi categoría?</li>
-                    <li>¿Cuándo vence el monotributo?</li>
-                    <li>¿Cuántas actividades puedo declarar?</li>
-                </ol>
-                <li class="preguntasListaTitulo">Facturación</li>
-                <ol>
-                    <li>¿Como hago para facturar online?</li>
-                        <iframe  class="media" src="https://www.youtube.com/embed/R3S2PIFTMII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
-                    <li>¿Puedo usar talonario manual?</li>                
-                </ol>
-                <li class="preguntasListaTitulo">IVA</li>
-                <ol>
-                    <li>¿Que facturas tengo que pedir?</li>
-                    <li>¿Cuándo vence?</li>
-                    <li>¿Me puedo tomar cualquier factura de compra?</li>
-                </ol>
-                <li class="preguntasListaTitulo">Ganancias</li>
-                <ol>
-                    <li>¿Cuándo Vence?</li>
-                    <li>¿Cómo hago para pagar menos?</li>                
-                </ol>
-            </ul>
-        </section>
     </div>
 
-    <footer id="footer">
-        <!-- Más del Estudio Contable -->
-        <div class="footerColumnas">
-            <div class="masDelEstudio">
-                <h4>Presas & Esquivel Servicios Contables</h4>  
-                <P>Somos un Estudio Contable de la ciudad Monte Grande, contamos con matrícula en CABA y Prov. de Buenos Aires.</P>
+
+<div class="accordion divAcordeon" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        1. Inscripciones
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">                    
+            <ol class="list-group list-group-numbered ">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">¿Que necesito para Inscribirme?</div>
+                    <ol>
+                      <li>Tu CUIT o CUIL y clave fiscal (la cual es obligatorio que la tramite el titular). Se tramita con la aplicación “MI AFIP” desde el celular.</li>
+                      <li>Foto DNI (Frente y Dorso) con fondo blanco.</li>
+                      <li>Foto tipo Selfie (estilo foto carnet), a tener en cuenta debe ser un fondo blanco y sin lentes en caso de usar. La foto debe ser similar a la de la foto del dni para que se pueda reconocer a la persona.</li>
+                      <li>En caso que el domicilio fiscal a declarar sea diferente al que figura en el DNI. Se necesitan 2 constancias de domicilio. Por ej: Factura de Servicios Publicos a su nombre; Extractos bancarios; Facturas de Cable, Celular u tarjeta de crédito; entre otros puede servir como constancia.</li>
+                      <li>Nos Indiques la Actividades que realizarás.</li>
+                      <li>Para la inscripción en ingresos brutos: el número de partida de ARBA, si el domicilio a declarar es de prov. De buenos aires, donde se realiza la actividad (si no tenés local sería la de tu domicilio)</li>                    
+                    </ol>
+                  </div>
+
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">¿Cuánto tiempo tarda?</div>
+                    Con esta información puesta a nuestra disposición se demora entre 24 y 48hs para realizar el trámite.
+                  </div>
+
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">¿Cuánto me sale?</div>
+                    <a class="nav-link" href="../paginas/presupuestos.html">Solicitá tu presupuesto</a>
+                  </div>
+                  <span class="badge bg-primary rounded-pill">NUEVO</span>
+                </li>
+              </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        2. Monotributo
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <img src="../Imagenes/monotributo.png" alt="Monotributo" class="fotoMonotributo" id="imgMonotributo">
+        <ol class="list-group list-group-numbered ">
+          <li class="list-group-item d-flex justify-content-between align-items-start">            
+            <div class="ms-2 me-auto">                
+              <div class="fw-bold">¿Qué Categoría me corresponde?</div>
+              <span>La categoría se te asigna en base al detalle de tus actividades:</span>
+              <ol>
+                <li>
+                  El tipo de actividad que desarrollás: <strong> venta de productos</strong> o <strong>prestación de servicios</strong>.
+                </li>
+                <li>
+                  Si la actividad se lleva a cabo en un local o establecimiento en particular, se tiene en cuenta:
+                </li>
+                  <ol>
+                    <li>La superficie afectada.</li>
+                    <li>El total anual de energía eléctrica consumida en kilowatts.</li>
+                    <li>El monto a pagar por el alquiler anualmente.</li>
+                  </ol>
+                  <li>El ingreso bruto anual: es un cálculo anual estimativo de los ingresos que se obtienen por el desarrollo de la actividad, es decir la facturación anual teniendo en cuenta los gastos e inversiones.</li>                  
+              </ol>
+              </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">¿Cuantó pago de Monotributo?</div>
+              Actualmente las categorías van de la “A” a la “H” para los prestadores de servicios y de la “A” a la “K” para quienes vendan productos.
+              <br>
+              <a href="#imgMonotributo">Revisá las categorías,</a>
+              <span>el monto que se paga por cada componente y el importe total a abonar por cada una.</span>
             </div>
-        <!-- Redes Sociales -->
-            <div class="redesSociales">
-                <h4>Redes Sociales</h4>
-                <a href="https://www.instagram.com/estudio.esquivelypresas" target="_blank">  <img src="../Imagenes/instagram.png" width="30" height="30" alt="instagram"></a>
-                <a href="https://es-la.facebook.com/estudiocontableesquivel/" target="_blank"> <img src="../Imagenes/facebook.png" width="30" height="30" alt="facebook"></a>
-            </div>            
-        <!-- Contacto -->
-            <div class="contacto">
-                <h4>Contacto</h4>
-                <p>Dirección</p>
-                <p>Telefóno</p>
-                <p>Mail</p>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">¿Hasta cuánto puedo facturar en mi categoría?</div>
+                <span>
+                  Revisá el parámetro "Ingresos Brutos (Anual)", para calcular en función de tu categoría cual debería ser tu facturación anual para mantenerla. Por ejemplo, para la categoría A ($ 466.201,59) el promedio mensual de facturación no debería exceder los $ 38.850,13.
+                </span>
             </div>
+            <span class="badge bg-primary rounded-pill">NUEVO</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">¿Cuándo vence el monotributo?</div>
+              El pago debe efectuarse hasta el día 20 de cada mes
+            </div>
+            <span class="badge bg-primary rounded-pill">NUEVO</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">¿Cuántas actividades puedo declarar?</div>
+              Podés realizar no más de 3 actividades simultáneas o poseer más de 3 unidades de explotación (locales).
+            </div>
+            <span class="badge bg-primary rounded-pill">NUEVO</span>
+          </li>   
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        3. Facturación
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+        <ol class="list-group list-group-numbered ">
+          <li class="list-group-item d-flex justify-content-between align-items-start">            
+            <div class="ms-2 me-auto">                
+              <div class="fw-bold">¿Como hago para facturar online?</div>
+                <iframe  class="media" src="https://www.youtube.com/embed/R3S2PIFTMII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+              </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">¿Puedo usar talonario manual?</div>
+              <strong>Factura electrónica obligatoria</strong>
+              <br>
+              A partir del 1°abril de 2019 los monotributistas de todas las categorías deberán emitir factura electrónica para las operaciones con consumidores finales. Para ello vas a tener que dar de alta un punto de venta nuevo desde el servicio “Administración de puntos de venta y domicilios” y seleccionar el sistema de facturación. Vas a poder facturar desde “Comprobantes en Línea” o desde la aplicación “Facturador Móvil” (disponoble para Android).
+              <br>
+              Si vas a facturar desde “Comprobantes en Línea” tendrás que configurarlo para que emita comprobantes con tus datos; los de la operación y los del receptor. Podés imprimirlo en ese momento o posteriormente ingresando a la opción “Consultas” dentro del menú del servicio.
+              <br>
+              Si preferís emitir tus comprobantes desde la aplicación para Android “Facturador Móvil”, tendrás que descargar la aplicación en un celular o tablet y registrar un punto de venta en el servicio “Comprobantes en línea.”
+              <br>
+              Quienes permanezcan en el Régimen de Inclusión Social y Promoción del Trabajo Independiente, se encuentran exceptuados de esta obligación.
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <!-- Más del Estudio Contable -->
+    <div class="footerColumnas">
+        <div class="masDelEstudio">
+            <h4>Presas & Esquivel Servicios Contables</h4>  
+            <P>Somos un Estudio Contable de la ciudad Monte Grande, contamos con matrícula en CABA y Prov. de Buenos Aires.</P>
         </div>
-        <!-- Copyright -->
-        <p class="copyright">© Copyright 2022-2022 Esquivel Alejandro - Todos los Derechos Reservados</p>
-    </footer>
+    <!-- Redes Sociales -->
+        <div class="redesSociales">
+            <h4>Redes Sociales</h4>
+            <a href="https://www.instagram.com/estudio.esquivelypresas" target="_blank">  <img src="../Imagenes/instagram.png" width="30" height="30" alt="instagram"></a>
+            <a href="https://es-la.facebook.com/estudiocontableesquivel/" target="_blank"> <img src="../Imagenes/facebook.png" width="30" height="30" alt="facebook"></a>
+        </div>            
+    <!-- Contacto -->
+        <div class="contacto">
+            <h4>Contacto</h4>
+            <p>Dirección</p>
+            <p>Telefóno</p>
+            <p>Mail</p>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <p class="copyright">© Copyright 2022-2022 Esquivel Alejandro - Todos los Derechos Reservados</p>
+</footer>
 
 </body>
 </html>

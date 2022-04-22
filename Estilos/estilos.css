@@ -77,7 +77,7 @@ height: 20vh;
 }
 .imagenCaminito {
     background-image: url('../Imagenes/portada.jpg');    
-}}
+}
 
 .textoCentrado{
     text-align: center;
@@ -367,6 +367,10 @@ ol{
     margin: 10px 10px;    
     width: 65%;
     height: auto;
+}
+
+.divAcordeon{
+    margin-bottom: 35vh;
 }
 
 /*PRESUPUESTOS*/
@@ -722,10 +726,13 @@ ol{
         text-align: center;
     }
 
+    .divAcordeon{
+        font-size: small;
+    }
 
-
-
-}
+    .divAcordeon ol {
+        margin: 0;
+    }
 
 @media screen and (min-width:992px) and (max-width:1023px) {
     #logo{
