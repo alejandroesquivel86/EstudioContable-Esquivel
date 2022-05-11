@@ -73,22 +73,65 @@ header {
   width: 100vw;
   align-items: center;
   justify-content: center; }
+  .tarjetas .card {
+    background-color: none; }
   .tarjetas .cardPersonalizada {
-    margin-top: 15px; }
+    margin: 0 0 50px;
+    margin-top: 8vh;
+    color: black;
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    max-height: 70vh;
+    max-width: 80vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 22px 22px 66px 22px;
+    border-color: black; }
+    .tarjetas .cardPersonalizada .cardSecundaria {
+      width: 350px;
+      height: 350px;
+      max-height: 70vh;
+      max-width: 80vw;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      z-index: -5;
+      border-radius: 22px 22px 66px 22px;
+      background-color: #dee2e6; }
+    .tarjetas .cardPersonalizada .cardIcono {
+      height: 80px;
+      width: 80px; }
+
+.card {
+  z-index: -200;
+  border: 0; }
 
 .servicios {
   margin: 5px;
   padding: 5px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  background-color: #edf7ff; }
   .servicios .serviciosLista {
-    margin: 15px; }
+    margin: 15px;
+    list-style: none; }
     .servicios .serviciosLista .serviciosTitulo {
+      text-transform: uppercase;
+      font-size: x-large;
       font-weight: 800;
       text-decoration: underline; }
-      .servicios .serviciosLista .serviciosTitulo .serviciosEstudio li {
-        margin-left: 25px;
-        margin-bottom: 10px;
-        margin: 5px; }
+    .servicios .serviciosLista .serviciosEstudio li {
+      font-size: large;
+      margin-left: 25px;
+      margin-bottom: 25px;
+      margin: 5px; }
 
 /*EXTEND y MIXINS*/
 .redesSociales {
@@ -143,6 +186,28 @@ header {
     width: 95vw; }
   .servicios {
     width: 95vw; }
+  .cardPersonalizada {
+    left: 0px;
+    width: 75vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 22px 22px 66px 22px;
+    border-color: black; }
+    .cardPersonalizada .cardSecundaria {
+      width: 75vw;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      z-index: -5;
+      border-radius: 22px 22px 66px 22px;
+      background-color: #dee2e6; }
   /*FOOTER*/
   #footer {
     height: auto;
@@ -189,7 +254,9 @@ header {
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   section article p {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .cardPersonalizada {
+    left: 20%; } }
 
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   header {
@@ -202,9 +269,11 @@ header {
   .tarjetas {
     width: 95vw; }
   .servicios {
-    width: 95vw; }
+    width: 100vw; }
   section article p {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .cardPersonalizada {
+    left: 20%; } }
 
 @media screen and (min-width: 2560px) {
   header {
@@ -220,6 +289,8 @@ header {
     width: 95vw; }
   section article p {
     font-size: 1.5rem; }
+  .cardPersonalizada {
+    left: 20%; }
   .whatsapp, .redesSociales .instagram, .redesSociales .facebook {
     right: 6vw; }
   .instagram {

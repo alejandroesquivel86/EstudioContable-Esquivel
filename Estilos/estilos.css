@@ -108,6 +108,10 @@ height: 20vh;
     text-decoration: none;
 }
 
+.contenerdorSomos{
+    background-color: #dee2e6;
+}
+
 .nombreEstudio{
     font-family: 'Roboto', sans-serif;    
     font-size: 3rem;
@@ -126,6 +130,42 @@ height: 20vh;
     margin-block-end: 0.67em;
 }
 
+blockquote {
+    border:none;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    margin-bottom:-30px;
+    position: relative; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding-left: 0.4em; 
+    }
+    
+    blockquote h4 {
+        font-size:21px;
+    }
+    
+    blockquote h4:before { 
+        content: "\201C";
+        font-weight: bold;
+        font-size:100px;
+        color:#889c0b;
+        position: absolute; 
+        top: -0.2em;
+        left: -0.5em; 
+        font-family: 'Georgia'; 
+    } 
+
+    blockquote h4:after { 
+        content: "\201D";
+        font-weight: bold;
+        font-size:100px;
+        color:#889c0b;
+        position: absolute; 
+        bottom: -0.6em;
+        right: 0; 
+        font-family: 'Georgia'; 
+    }
+
 .quienesSomos{
     font-family: 'Open Sans', sans-serif;  
     font-style: italic;  
@@ -136,6 +176,14 @@ height: 20vh;
     margin-block-start: 1.00em;
     margin-block-end: 1.00em;
     padding: 5% 20% 5% 20%; 
+}
+
+.quienesSomos span{
+    font-weight: 800;
+}
+
+.underline{
+    text-decoration:underline;
 }
 
 .equipoPresentacion{
@@ -169,7 +217,7 @@ height: 20vh;
     background: #8A2387;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    z-index: -9999;
+    z-index: -10;
 }    
 
 .alejandro{
@@ -205,15 +253,36 @@ height: 20vh;
 .textoChicos{
     background-color: black;
     color: #fff;
-    position: absolute;
     margin-top: 8vh;
-    left: 35%;
-    padding: 5%;
-    height: 50vh;
+    left: 35%;    
+    width: 25vw;
+    height: 55vh;
     max-height: 70vh;
-    overflow: hidden;
+    max-width: 90vw;    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 22px 22px 66px 22px;
     
+}
 
+.cardSecundaria{
+    width: 25vw;
+    height: 55vh;
+    max-height: 70vh;
+    max-width: 90vw;  
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: -5;
+    border-radius: 22px 22px 66px 22px;
+    background-color: #dee2e6;    
 }
 
 .hola{  
@@ -221,10 +290,14 @@ height: 20vh;
     font-size: 40px;
 }
 
+.textoChicos p span{
+    font-weight: 800;    
+}
+
 section article p{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
@@ -286,14 +359,36 @@ h1 {
     text-align: center;
 }
 
-.tarjetas{
-    width: 100vw;
+.cardPersonalizada{
+    margin: 0 0 50px;
+    margin-top: 8vh;
+    background-color:blue;
+    color: #fff;    
+    left: 35%;    
+    width: 25vw;
+    height: 55vh;
+    max-height: 70vh;    
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 22px 22px 66px 22px;    
 }
 
-.cardPersonalizada{
-    margin-top: 15px;
+.cardSecundaria{
+    width: 25vw;
+    height: 55vh;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: -5;
+    border-radius: 22px 22px 66px 22px;
+    background-color: #dee2e6;    
 }
 
 .tituloServ{
@@ -381,8 +476,7 @@ ol{
     margin-bottom: 10px;
 }
 
-.imgPresupuesto{
-    height: 30vh;
+.imgPresupuesto{    
     width: 40vw;
     overflow: hidden; 
     margin-left: auto;
@@ -590,13 +684,20 @@ ol{
     }
     
     .textoChicos{        
+        width: 80vw;
+        height: 70vh;
         position:relative;
-        margin: 5px;
+        margin: auto;
         left: 0;
         padding: 5%;
         height: auto;
         max-height: auto;
         overflow: hidden;            
+    }
+
+    .cardSecundaria{
+        width: 80vw;
+        height: 70vh;
     }
     
     .hola{  
@@ -607,7 +708,7 @@ ol{
     section article p{
         font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         font-weight: 300;
     }
 
@@ -808,7 +909,17 @@ ol{
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
+
+    .textoChicos{
+        width: 25vw;
+        height: 55vh;        
+    }
     
+    .cardSecundaria{
+        width: 25vw;
+        height: 55vh;
+    }
+
     section article p{
         font-size: 1.2rem;
     }

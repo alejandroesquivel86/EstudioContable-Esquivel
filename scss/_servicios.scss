@@ -15,25 +15,72 @@ header{
     width: 100vw;
     align-items: center;
     justify-content: center;
-    .cardPersonalizada{
-        margin-top: 15px;
+    .card{
+        background-color: none;
     }
+    .cardPersonalizada{        
+    margin: 0 0 50px;
+    margin-top: 8vh;       
+    color: black;    
+    background-color: white;    
+    width: 350px;
+    height: 350px;
+    max-height: 70vh;   
+    max-width: 80vw; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 22px 22px 66px 22px;  
+    border-color: black;  
+        .cardSecundaria{
+        width: 350px;
+        height: 350px;
+        max-height: 70vh;   
+        max-width: 80vw; 
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: -5;
+        border-radius: 22px 22px 66px 22px;
+        background-color: #dee2e6;    
+        }  
+        .cardIcono{
+            height: 80px;
+            width: 80px;
+        }              
+    }
+}
+
+.card{
+    z-index:-200;
+    border: 0;
 }
 
 .servicios{
     margin: 5px;
     padding: 5px;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(237, 247, 255);
     .serviciosLista{
         margin: 15px;
+        list-style: none;
         .serviciosTitulo{
+            text-transform: uppercase;
+            font-size: x-large;
             font-weight: 800;
             text-decoration: underline;
+        }
             .serviciosEstudio li{
+                font-size: large;
                 margin-left: 25px;
-                margin-bottom: 10px;
-                margin: 5px;
-            }
+                margin-bottom: 25px;
+                margin: 5px;            
         }
     }
 }
